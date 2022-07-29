@@ -1,0 +1,17 @@
+@using ProjectManagementFrontEnd.Models;
+@model UserInfo
+<div class="text-center p-md-5 bg-transparent box-shadow border-rounded">
+    <h1>User Information</h1>
+    <div class="w-50 mx-auto p-3 ">
+        <table class="table table-light border-0 fw-bold">
+            <tr>
+                <td>Username</td>
+                <td><i>@Model.username</i></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><i><a href="mailto:s@Model.email">@Model.email</a></i></td>
+            </tr>
+        </table>
+    </div>
+</div>

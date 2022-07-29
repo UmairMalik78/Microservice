@@ -1,0 +1,12 @@
+C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\bin\Debug\net5.0\Play.Users.Contracts.deps.json
+C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\bin\Debug\net5.0\Play.Users.Contracts.dll
+C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\bin\Debug\net5.0\Play.Users.Contracts.pdb
+C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\obj\Debug\net5.0\Play.Users.Contracts.csproj.AssemblyReference.cache
+C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\obj\Debug\net5.0\Play.Users.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\obj\Debug\net5.0\Play.Users.Contracts.AssemblyInfoInputs.cache
+C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\obj\Debug\net5.0\Play.Users.Contracts.AssemblyInfo.cs
+C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\obj\Debug\net5.0\Play.Users.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\obj\Debug\net5.0\Play.Users.Contracts.dll
+C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\obj\Debug\net5.0\refint\Play.Users.Contracts.dll
+C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\obj\Debug\net5.0\Play.Users.Contracts.pdb
+C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\obj\Debug\net5.0\ref\Play.Users.Contracts.dll

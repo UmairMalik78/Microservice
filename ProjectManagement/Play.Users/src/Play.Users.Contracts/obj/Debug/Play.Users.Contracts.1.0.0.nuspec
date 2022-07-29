@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Play.Users.Contracts</id>
+    <version>1.0.0</version>
+    <authors>Play.Users.Contracts</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\umair\Desktop\MyProjects\ProjectManagement\Play.Users\src\Play.Users.Contracts\bin\Debug\net5.0\Play.Users.Contracts.dll" target="lib\net5.0\Play.Users.Contracts.dll" />
+  </files>
+</package>

@@ -1,0 +1,63 @@
+@section styles
+{
+    <link rel="stylesheet" href="~/css/AddTask.css" />
+}
+
+<div class="container">
+    <div id="login-div" class="login-div text-center p-sm-1 p-md-3 p-lg-4 p-xl-5 bg-light rounded-1 position-absolute ">
+        <form method="post">
+            <div class="col-12 text-center display-6 fw-bold mb-md-5 login-text">
+                Login
+            </div>
+            <div class="mb-3 mb-sm-4 mb-md-5 row">
+                <label for="staticEmail" class="col-sm-auto col-form-label px-0"><i class="bi bi-person"></i></label>
+                <div class="col">
+                    <input type="text" class="form-control text" id="staticEmail" placeholder="Email">
+                </div>
+            </div>
+            <div class="mb-3 mb-sm-4 mb-md-5 row">
+                <label for="inputPassword" class="col-sm-auto col-form-label px-0"><i class="bi bi-lock"></i></label>
+                <div class="col">
+                    <input type="password" class="form-control " id="inputPassword" placeholder="Password">
+                </div>
+            </div>
+            <div class="text-center my-2">
+                <button class="btn btn-outline-dark w-50 rounded-pill">Login</button>
+                <div class="mt-2">
+                    New User? <a href="#" onclick="ShowSignUpDiv()">Sign Up</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="sign-up" class="signup-div text-center p-sm-1 p-md-3 p-lg-4 p-xl-5 bg-light rounded-1 position-absolute ">
+        <form method="post">
+            <div class="col-12 text-center display-6 fw-bold mb-md-5 login-text">
+                Sign Up
+            </div>
+            <div class="mb-3 mb-sm-4 mb-md-5 row">
+                <label for="staticEmail" class="col-sm-auto col-form-label px-0"><i class="bi bi-person"></i></label>
+                <div class="col">
+                    <input type="text" class="form-control text" id="staticEmail" placeholder="Enter Name">
+                </div>
+            </div>
+            <div class="mb-3 mb-sm-4 mb-md-5 row">
+                <label for="staticEmail" class="col-sm-auto col-form-label px-0"><i class="bi bi-person"></i></label>
+                <div class="col">
+                    <input type="text" class="form-control text" id="staticEmail" placeholder="Enter Email">
+                </div>
+            </div>
+            <div class="mb-3 mb-sm-4 mb-md-5 row">
+                <label for="inputPassword" class="col-sm-auto col-form-label px-0"><i class="bi bi-lock"></i></label>
+                <div class="col">
+                    <input type="password" class="form-control " id="inputPassword" placeholder="Enter Password">
+                </div>
+            </div>
+            <div class="text-center my-2">
+                <button class="btn btn-outline-dark w-50 rounded-pill">Sign Up</button>
+                <div class="mt-2">
+                    Go back to <a href="#" onclick="ShowLoginDiv()">Log in</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

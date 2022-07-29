@@ -1,0 +1,50 @@
+@model UpdatePMTaskViewModel
+
+<div class="row mt-md-5 border bg-light add-new-task-form p-md-3 border-dark rounded shadow" id="update-task-form">
+    <div class="col-12">
+        <div class="text-center">
+            <h1 class="text-success">Update Task</h1>
+        </div>
+        <form id="add-task-form">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-floating mb-3">
+                        <input required value="@Model.taskToUpdate.title" name="title" type="text" class="form-control" id="title" placeholder="name@example.com">
+                        <label for="title">Title</label>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-floating mb-3">
+                        <input required type="date" value="@Model.taskToUpdate.deadlineDate" name="date" class="form-control" id="taskDeadline" placeholder="name@example.com">
+                        <label for="dtaskDeadline">Deadline</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+                        <select class="form-select" value="@Model.taskToUpdate.assignedUserId" name="assignedUserId" id="assignedUserId" aria-label="Floating label select example">
+                            <option>Open this select menu</option>
+                            @{
+                                foreach(var user in Model.allUsers)
+                                {
+                                    <option value="@user.id">@user.email</option>
+                                }
+                            }
+                        </select>
+                        <label for="assignedUserId">Assign to</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <textarea required value="@Model.taskToUpdate.description" style="height: 70px" name="description" class="form-control" placeholder="Leave a comment here" id="description"></textarea>
+                        <label for="description">Desription</label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <Button onclick="closeAddTaskDiv()" class="btn btn-outline-danger w-25 rounded-pill mt-4 mx-1">Cancel  </Button>
+                    <Button type="submit" class="btn btn-outline-success w-25 rounded-pill mt-4">Add  </Button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

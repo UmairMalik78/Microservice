@@ -1,0 +1,75 @@
+@model DisplayPMTasksViewModel
+
+@section styles
+{
+    <link rel="stylesheet" href="~/css/PMTasks.css" />
+}
+
+@section Scripts{
+    <script src="~/js/PMTasks.js"></script>
+}
+<partial name="PMNavbar"/>
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center fw-bold "id="user-info-div">
+        </div>
+        <div class="col-12 text-center fw-bold display-6">
+            Here is your Task List:
+        </div>
+        <div class="table-responsive" id="pm-tasks-div">
+        </div>
+        <div class="text-center mt-4">
+            <button class="btn btn-outline-info w-25 rounded-pill mx-2" onclick="showAddTaskDiv()">Add New Task</button>
+        </div>
+    </div>
+    <div id="update-task-form"></div>
+    <div class="row mt-md-5 border bg-light add-new-task-form p-md-3 border-dark rounded shadow" id="add-new-task-form">
+        <div class="col-12">
+            <div class="text-center">
+                <h1 class="text-success">Add New Task</h1>
+            </div>
+            <form id="add-task-form">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-floating mb-3">
+                            <input required name="title" type="text" class="form-control" id="title" placeholder="name@example.com">
+                            <label for="title">Title</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-floating mb-3">
+                            <input required type="date" name="date" class="form-control" id="taskDeadline" placeholder="name@example.com">
+                            <label for="dtaskDeadline">Deadline</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <select class="form-select" name="assignedUserId" id="assignedUserId" aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                @{
+                                    foreach(var user in Model.allUsers)
+                                    {
+                                        <option value="@user.id">@user.email</option>
+                                    }
+                                }
+                            </select>
+                            <label for="assignedUserId">Assign to</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <textarea required style="height: 70px" name="description" class="form-control" placeholder="Leave a comment here" id="description"></textarea>
+                            <label for="description">Desription</label>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <Button onclick="closeAddTaskDiv()" class="btn btn-outline-danger w-25 rounded-pill mt-4 mx-1">Cancel  </Button>
+                        <Button type="submit" class="btn btn-outline-success w-25 rounded-pill mt-4">Add  </Button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

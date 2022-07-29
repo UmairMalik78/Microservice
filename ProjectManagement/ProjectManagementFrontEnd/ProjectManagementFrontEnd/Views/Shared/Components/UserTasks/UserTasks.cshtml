@@ -1,0 +1,53 @@
+@using ProjectManagementFrontEnd.Models;
+@model List<TaskInfo>
+
+@{
+    if(@Model.Count==0){
+        <h3 class="text-success">No Pending Tasks are there!!!</h3>
+    }else{
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Sr</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Deadline</th>
+                    <th>Current Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            @{
+                var index = 0;
+                foreach (var userTask in Model)
+                {
+                    <tr>
+                        <td>@index</td>
+                        <td>@userTask.title</td>
+                        <td>@userTask.description</td>
+                        <td>@userTask.taskDeadline</td>
+                        @if (userTask.status == false)
+                        {
+                            <td class="bg-danger text-light">Not Completed
+                            </td>
+                            <td>
+                                <input type="checkbox" onclick="Model.completedTasksIds[@index]"/>
+                                <button class="btn btn-success">Mark Comlete</button>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="bg-success text-light"> Completed</td>
+                            <td class="bg-transparent text-light"> --- </td>
+                        }
+                        <td><button type="button" class="btn btn-outline-warning">Update</button>> </td>
+                    </tr>
+                    {index++;}
+                }
+            }
+            </tbody>
+        </table>
+    }
+}
+
+

@@ -1,0 +1,24 @@
+@model DisplayUserInfoViewModel
+
+<partial name="DeveloperNavbar">
+
+<div class="alert-"
+<div class="container">
+    <div class="row">
+        <div class="prfile-detail div col-md-6 mx-auto">
+            <form method="post" asp-action="UpdateProfile" class="py-5 px-3 border-1 border-rounded">
+                <label class="form-label">Email</label>
+                <input required asp-for="@Model.userInfo.email" type="text" value="@Model.userInfo.email" class="form-control">
+                <label class="form-label">Username</label>
+                <input required asp-for="@Model.userInfo.username" type="text" value="@Model.userInfo.username" class="form-control">
+                <label class="form-label">Old Password</label>
+                <input required type="password" asp-for="@Model.oldPass" class="form-control" placeholder="Old Password"/>
+                <label class="form-label">New Password</label>
+                <input required type="password" asp-for="@Model.userInfo.password" class="form-control" placeholder="New Password">
+                <div class="text-center">
+                    <button class="btn btn-outline-success w-25 rounded-pill">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
